@@ -1,0 +1,17 @@
+#container > div { margin-bottom: 10px; border: 1px dotted #000; width: 250px; }
+
+.box { width: 200px; height: 100px; border: 5px solid gray; background-color: silver; margin: 25px auto; }
+
+#ex01:hover .box:first-child {transform: translate(100px, 50px);}
+
+#ex02:hover .box:first-child {transform: scale(2);}
+
+#ex03:hover .box:first-child {transform-origin: 50% 50%;
+				transform: rotate(45deg);
+				}
+
+#ex03:hover .box:nth-child(2) {transform-origin: left top;
+				transform: rotate(45deg);
+				}
+				
+#ex04:hover .box:first-child {transform: skew(25deg);}

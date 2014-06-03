@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>indice</title>
+	<meta name="author" content="Imac 12" />
+	<!-- Date: 2013-12-04 -->
+</head>
+<body>
+	<h1>Rellena tu CV</h1>
+	<form action="http://192.168.1.46/XHTML/ej14/post.php" method="post">
+		<fieldset>
+			<legend>Datos personales</legend>
+			<label for="provincia">Provincia</label>
+			<select id="provincia" name="provincia">
+				<option value="" selected="selected">- selecciona -</option>
+				<option value="guipuzcoa">Guip&uacute;zcoa</option>
+				<option value="vizcaya">Vizcaya</option>
+				<option value="alava">&Aacute;lava</option>
+			</select>
+			<br/>
+			<label>Fecha de nacimiento</label><br/>
+			<input type="text" name="dia" value="" size="2"/> de
+			<select name="mes">
+				<option value="enero">Enero</oprion>
+				<option value="febrero">Febrero</option>
+				<option value="marzo" selected="selected">Marzo</option>
+				<option value="abril">Abril</option>
+			</select> de 
+			<input type="text" name="anyo" value="" size="4"/>
+			<br/>
+			<label for="temas">Temas de inter&eacute;s</label>
+			<select id="temas" name="temasDeInteres[]" size="5" multiple="multiple">
+				<option value="bbdd">Administraci&oacute;n de bases de datos</option>
+				<option value="analisprogramacion">An&aacute;lisis y programaci&oacute;n</option>
+				<option value="arquitectura">Arquitectura</option>
+				<option value="calidad">Calidad</option>
+				<option value="erp">ERP, CRM, Business Intelligence</option>
+			</select>
+		</fieldset>
+		<br/>
+		<input type="submit" name="enviar" value="Enviar"/>
+	</form>
+</body>
+</html>
+

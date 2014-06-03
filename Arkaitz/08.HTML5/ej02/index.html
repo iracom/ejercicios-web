@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ejercicio de formularios HTML5</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulario HTML5</legend>
+                <div class="row">
+                    <label for="email">Email: <input type="email" name="email" id="email" autocomplete="off" autofocus placeholder="Introduzca un email" required></label>
+                </div>
+                <div class="row">
+                    <label for="url">Url: <input type="url" name="url" id="url" autocomplete="on"></label>
+                </div>
+                <div class="row">
+                    <label for="date">Date: <input type="date" name="date" id="date" min="2014-01-25"></label>
+                </div>
+                <div class="row">
+                    <label for="time">Time: <input type="time" name="time" id="time"></label>
+                </div>
+                <div class="row">
+                    <label for="datetime">Datetime: <input type="datetime" name="datetime" id="datetime"></label>
+                </div>
+                <div class="row">
+                    <label for="month">Month: <input type="month" name="month" id="month"></label>
+                </div>
+                <div class="row">
+                    <label for="week">Week: <input type="week" name="week" id="week"></label>
+                </div>
+                <div class="row">
+                    <label for="number">Number: <input type="number" name="number" id="number" min="0" max="10" step="2"></label>
+                </div>
+                <div class="row">
+                    <label for="range">Range: <input type="range" name="range" id="range" min="0" max="10" step="5"></label>
+                </div>
+                <div class="row">
+                    <label for="tel">Tel: <input type="tel" name="tel" id="tel"></label>
+                </div>
+                <div class="row">
+                    <label for="search">Search: <input type="search" name="search" id="search"></label>
+                </div>
+                <div class="row">
+                    <label for="color">Color: <input type="color" name="color" id="color"></label>
+                </div>
+                <div class="row">
+                    <label for="file">File: <input type="file" name="file" id="file" multiple></label>
+                </div>
+                <div class="row">
+                    <label for="text">Password: <input type="text" name="text" id="text" pattern="^\d(.){4,}[A-Z]$"></label>
+                </div>
+                <div class="row">
+                    <label for="data">Navegadores: <input type="text" name="data" id="data" list="navegadores"></label>
+                    <datalist id="navegadores">
+                      <option value="Internet Explorer">
+                      <option value="Firefox">
+                      <option value="Google Chrome">
+                      <option value="Opera">
+                      <option value="Safari">
+                    </datalist>
+                </div>
+                <progress value="0"></progress>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

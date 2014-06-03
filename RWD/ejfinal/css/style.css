@@ -1,0 +1,231 @@
+/* ---- Estilos b�sicos ---------------------------------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F2F5FE url("../imagenes/fondo.gif") 0 0 repeat-x;
+  /*font: 70%/160% "verdana", sans-serif;*/
+  color: #192666;
+}
+
+a {
+  color:#192666;
+}
+a:hover {
+  color:#4F6AD7;
+}
+
+p {
+  margin: 1em 0;
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1em 0;
+  padding:0;
+}
+
+h1 {
+  font-size: 260%;
+  font-family: "georgia", serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-size:180%;
+  font-family: "georgia", serif;
+  font-weight:normal;
+}
+
+h3 {
+  font-size:120%;
+  font-weight:bold;
+}
+
+/* ---- Contenedor --------------------------------------------------------- */
+
+
+/* ---- Cabecera ----------------------------------------------------------- */
+
+.header {
+	background-color: rgb(40, 66, 159);
+	margin-bottom: 0;
+}
+
+#cabecera #logo {	
+  padding-left: 2%;
+}
+
+#cabecera #logo a {
+  color: #FFF;
+  line-height: 35px; 
+}
+
+#cabecera #logo a:hover {
+  color: #B5C4E3;
+  text-decoration: underline;
+}
+
+#cabecera #buscador {
+	padding-right: 2%;
+}
+
+#cabecera #buscador fieldset {
+  border: none;
+}
+
+/* ---- Menu --------------------------------------------------------------- */
+#menu {
+  background: #192666;
+  width: 100%
+}
+
+/* ---- Contenido ---------------------------------------------------------- */
+
+.content {
+	background-color: #FFF;
+}
+
+.articulo {
+	background: #F2F5FE 0 0 repeat-x;
+}
+
+.articulo h2 {
+	background: #DEE5FD;
+  	color: #192666;
+  	padding: 2%;
+}
+
+#contenido .info {
+  margin: 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #DEE5FD;
+  color:#6685CC;
+}
+
+.info a { color:#6685CC; }
+.info a:hover { color:#FF9000; }
+
+/*.info span.fecha, .info span.categoria, .info span.autor, .info span.comentarios {
+  padding-left:15px;
+}*/
+
+#secundario {
+	background-color: #CEDBF9;
+}
+
+#secundario h3 {
+  padding: 8% 0%;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: #A0B9F3;
+  color: #192666;
+}
+
+#secundario #sobremi img {
+  float: left;
+  margin: 1% 2% 0 0;
+}
+
+#secundario div {
+  padding: 0 1%;
+}
+
+#secundario ul {
+  padding: 0;
+  list-style:none;
+}
+
+#secundario li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #E0E8FA;
+}
+
+#secundario li a {
+  display: block;
+  padding: 2% 0 2% 2%;
+  text-decoration: none;
+}
+
+#secundario li a:hover {
+  background-color: #E0E8FA;
+  color: #192666;
+}
+
+#secundario li.seleccionado a {
+  font-weight: bold;
+}
+
+/* ---- Pie ---------------------------------------------------------------- */
+
+#pie p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- Pantalla mayor que smartphone -------------------------------------- */ 
+
+@media(min-width: 768px) {
+	
+	ul, ol {
+  		margin: 1em 0 1em 2em;
+  		padding:0;
+	}
+	
+	.header {
+		border-radius: 2em 2em 0 0;		
+		padding: 0;
+	}
+	
+	/*#cabecera {
+		background: url("../imagenes/cabecera.jpg") no-repeat;
+		background-size: cover;
+	}*/
+
+	.nav {
+		width: 100%;
+		height: 40px;
+	}
+
+	#menu ul li {
+		margin-right: 1%;
+		margin-top: 1%;
+  		float:left;
+	}
+	
+	#menu ul li a {
+  		background: #253575;
+  		color: #B5C4E3;
+  		font-weight: bold;
+  		padding-top: 5px;
+		padding-bottom: 5px;
+  	}
+  	
+  	#menu ul li.seleccionado a {
+  		background: #FFF;
+  		color: #FF9000;	
+	}
+	
+	.articulo {
+		border-radius: 2em 0 0 0;
+		box-shadow: 5px 5px 5px rgb(222,228,252) inset;
+		margin: 2% 0 0 2%;
+		padding: 2% 0 0 0;
+	}
+	
+	#secundario {
+		border-radius: 0 2em 0 0;
+		box-shadow: -5px 5px 5px rgb(183,202,246) inset;
+		padding: 16% 0 0 0;
+		margin: 7% 0 0 0;
+	}
+	
+	#secundario ul {
+		margin: 2% 0;
+	}
+}

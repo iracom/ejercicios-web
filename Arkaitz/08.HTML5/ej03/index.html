@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Ejercicio de formularios HTML5</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                document.writeln("<h2>Input types</h2>");
+                for(var type in Modernizr.inputtypes) {
+                    document.writeln("Soporte para input["+type+"]: "+Modernizr.inputtypes[type]+"<br />");
+                }
+
+                document.writeln("<h2>Input attributes</h2>");
+                for(var type in Modernizr.input) {
+                    document.writeln("Soporte para "+type+": "+Modernizr.input[type]+"<br />");
+                }
+
+                document.writeln("<h2>Video formats</h2>");
+                for(var codec in Modernizr.video) {
+                    document.writeln(codec+" video: "+Modernizr.video[codec]+"<br />");
+                }
+
+                document.writeln("<h2>Local storage</h2>");
+                document.writeln("Local Storage: "+Modernizr.localstorage+"<br />");
+                document.writeln("Session Storage: "+Modernizr.sessionstorage+"<br />");
+                document.writeln("Web SQL: "+Modernizr.websqldatabase+"<br />");
+                document.writeln("IndexedDB: "+Modernizr.indexeddb+"<br />");
+            });
+        </script>
+    </body>
+</html>

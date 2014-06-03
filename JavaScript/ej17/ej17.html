@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ejercicio 17 - Información sobre eventos</title>
+
+    <style type="text/css">
+    body {font-family: arial, helvetica;}
+    #info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
+    #info h1 {margin: 0;}
+    .yellow {background-color: #FFFFCC;}
+    .white {background-color: #FFFFFF;}
+    .blue {background-color: #CCE6FF;}
+    </style>
+
+    <script type="text/javascript">
+    window.onload = function(){
+    	function muestraInformacion(mensaje) {
+        	document.getElementById("info").innerHTML = '<h1>'+mensaje[0]+'</h1>';
+        	for(var i=1; i<mensaje.length; i++) {
+            	document.getElementById("info").innerHTML += '<p>'+mensaje[i]+'</p>';
+        	}
+    	}
+    	
+    	function movimientoRaton(e){
+    		var msgRaton = ["Ratón","Navegador ["+e.clientX+", "+e.clientY+"]","Pagina ["+e.pageX+", "+e.pageY+"]"];
+    		muestraInformacion(msgRaton);
+    		var info = document.querySelectorAll("#info");
+    		info[0].className = "white";
+    	}
+    	
+    	function teclaPulsada(e){
+    		var msgTecla = ["Teclado","Carácter ["+String.fromCharCode(e.charCode)+"]","Código ["+e.keyCode+"]"];
+    		muestraInformacion(msgTecla);
+    		var info = document.querySelectorAll("#info");
+    		info[0].className = "blue";
+    	}
+    	
+    	function colorAmarillo(e){
+    		var info = document.querySelectorAll("#info");
+    		info[0].className = "yellow";
+    	}
+    	
+    	document.addEventListener("mousemove",movimientoRaton);
+    	document.addEventListener("keypress",teclaPulsada);
+    	document.addEventListener("mousedown",colorAmarillo);
+    	
+    	// window.onmousemove = movimientoRaton;
+    	// window.onkeypress = teclaPulsada;
+    	// window.onmousedown = colorAmarillo;
+    }
+    
+    </script>
+</head>
+
+<body>
+
+    <div id="info"></div>
+
+</body>
+</html>

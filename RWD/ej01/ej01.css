@@ -1,0 +1,133 @@
+/* --------------------------------
+Site:       Site name
+CSS author: Your name here
+Updated:    Date
+Updated by: Your name here
+-------------------------------- */
+
+/* ----------------------------
+simple reset
+---------------------------- */
+* {box-sizing: border-box;} /* El box-sizing lo ponemos para que al poner paddings, no se vaya al garete el diseño al cambiar de resolucion.
+* El box-sizing habría que ponerselo a todos los elementos y en este caso lo hemos hecho con el '*' para ahorrar tiempo.
+* Combendría escribir los elementos uno a uno. */
+
+html, body, ul, ol, li, form, fieldset, legend
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+fieldset,img { border: 0; }
+legend { color: #000; }
+li { list-style: none; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td
+{
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+input, textarea, select
+{
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+abbr, acronym
+{
+    border-bottom: .1em dotted;
+    cursor: help;
+}
+
+/* Cambios para hacerlo responsive */
+
+.clearfix::before, .clearfix::after {
+	display: table;
+	content: " ";
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+body
+{
+    margin: 20px;
+    color: #000;
+    background: #fff;
+    font: 16px/1.3 Helvetica, Arial, "Microsoft Sans Serif", sans-serif;/* 16px es el tamaño de la fuente y el 1.3 la separación entre lineas*/
+}
+
+#container
+{
+    width: 90%;
+    max-width: 1000px;
+    background: #bbb;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#nav
+{
+    float: left;
+    width: 20%; /* 200px/1000px */
+    background: lime;
+    padding: 20px;
+}
+
+#content
+{
+    float: left;
+    width: 55%; /* 550px/1000px */
+    margin: 0 0 0 2.5%; /* 25px/1000px */
+    background: yellow;
+    padding: 20px;
+}
+
+#extras
+{
+    float: right;
+    width: 20%; /* 200px/1000px*/
+    background: gray;
+    padding: 20px;
+}
+
+.feature-image
+{
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+img {
+	max-width: 100%; /* Todas las imagenes, máximo cogeran el 100% de anchura de su contenedor*/
+}
+
+@media (max-width:1000px) {
+	#container {
+		width: 95%;
+	}
+	#content {
+		width: 77.5%; /* 80% - 2.5% -> El 80% es lo que queda del 100% del contenedor menos el 20% del #nav. Y el 2.5% lo que tenía al principio el #content.*/
+	}
+	#extras {float: none;
+			width: 77.5%; /* El mismo que el content */
+			clear: both;
+			margin-left: 22.5%; /* 100% - 77.5% */}
+}
+
+@media (max-width:480px) {
+	body {margin: 0;}
+	#container, #nav, #extras, #content {width: 100%; float: none; margin: 0;}
+	#content .feature-image {display: none;}
+}

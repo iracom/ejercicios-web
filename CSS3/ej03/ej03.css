@@ -1,0 +1,68 @@
+body { margin: 0px; }
+
+#container{ background: #666 url(ej03_tree.jpg) no-repeat -60px 0;
+            width: 420px;
+            height: 480px;
+            position: relative;
+        	}
+
+.snowflake { color: #fff;
+            font-size: 2em;
+            position: absolute;
+        	animation-iteration-count: infinite;}
+
+.snowflake.f1 { left: 40px; 
+				animation-duration: 5s;
+				animation-name: despla;}
+
+.snowflake.f2 {font-size: 1.8em;
+            	left: 120px;
+            	animation-name: caida;
+        		animation-duration: 4s;}
+
+.snowflake.f3 {left: 200px;
+				animation-duration: 4s;
+				animation-name: despla;}
+
+.snowflake.f4 {font-size: 1.5em;
+            	left: 280px;
+            	animation-duration: 5s;
+            	animation-name: caida;}
+
+@keyframes caida {
+	0% {
+		margin-top:0%;
+	}
+	100% {
+		margin-top:200%;
+		opacity: 0;
+	}
+}
+
+@keyframes despla {
+	0% {
+		opacity: 0;
+		margin-top: 0%;
+		margin-left: 0%;
+	}
+	20% {
+		margin-left: 10%;
+		opacity: 0.5;
+	}
+	40% {
+		margin-left: 0%;
+		opacity: 1;
+	}
+	60% {
+		margin-left: 10%;
+	}
+	80% {
+		margin-left: 0%;
+	}
+	100% {
+		margin-top: 115%;
+		margin-left: 5%;
+	}
+}
+
+

@@ -1,0 +1,15 @@
+.container {
+	background: #bbb;
+}
+
+.nav {
+	background: lime;
+}
+
+.content {
+	background: yellow;
+}
+
+.extras {
+	background: gray;
+}

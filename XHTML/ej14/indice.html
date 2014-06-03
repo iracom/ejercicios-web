@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>indice</title>
+	<meta name="author" content="Imac 12" />
+	<!-- Date: 2013-12-04 -->
+</head>
+<body>
+	<h1>Rellena tu CV</h1>
+	<form action="http://192.168.1.46/XHTML/ej14/post.php" method="post" enctype="multipart/form-data">
+		Nombre<br />
+		<input type="text" name="nombre" id="nombre"/><br/>
+		Apellidos<br/>
+		<input type="text" name="apellidos"/><br/>
+		Contraseña<br/>
+		<input type="password" name="contrasena"/><br/>
+		DNI<br/>
+		<input type="text" name="dni"/><br/>
+		Sexo<br/>
+		<input type="radio" id="hombre" name="sexo" checked="checked" value="hombre"/><label for="hombre">Hombre</label><br/>
+		<input type="radio" id="mujer" name="sexo" value="mujer"/><label for="mujer">Mujer</label><br/>
+		<br/>
+		Incluir mi foto
+		<input type="file" name="foto"/><br/>
+		<br/>
+		<input type="checkbox" id="suscripcion" name="suscribir" checked="checked" value="suscribir"/>
+		<label for="suscripcion">Suscribirme al bolet&iacute;n de novedades</label><br/>
+		<br/>
+		<input type="submit" name="enviar" value="Guardar cambios"/>
+		<input type="reset" name="borrar" value="Borrar los datos introducidos"/>
+	</form>
+</body>
+</html>
+

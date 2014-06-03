@@ -1,0 +1,3 @@
+Lungo.init({
+    name: 'example'
+});

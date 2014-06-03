@@ -1,0 +1,57 @@
+<section id="settings" data-transition="slide">
+	<header data-title="Configuracion">
+		<nav class="on-left">
+    		<button data-view-section="back" data-icon="chevron-left"></button>
+    	</nav>
+	</header>
+	<article id="settings" class="list active">
+		<div class="form">
+		    <ul>
+			    <li>
+			        <fieldset>
+			        	<label class="anchor"><strong>Auto refresh</strong></label>
+			        	<input id="automatico" type="checkbox" class"inline right">
+			    	</fieldset>
+				</li>
+				<li>
+					<fieldset>
+						<select id="tiempoactualizacion" class="custom" disabled>
+							<option value="15">15 minutes</option>
+							<option value="30">30 minutes</option>
+							<option value="60">60 minutes</option>
+							<option value="720">12 hours</option>
+							<option value="1440">24 hours</option>
+						</select>
+					</fieldset>
+				</li>
+				<li>
+					<fieldset>
+						<label><strong>Magnitud:</strong></label>
+						<label class="select">
+							<select id="magnitud" class="custom">
+								<option value="0" selected="selected">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</label>
+					</fieldset>
+				</li>
+				<li>
+					<fieldset>
+						<button class="anchor margin-bottom" data-label="Reset defaults">
+							<abbr>Reset defaults</abbr>
+						</button>
+					</fieldset>
+				</li>
+			</ul>
+		</div>
+	</article>
+</section>

@@ -1,0 +1,9 @@
+body, html {
+    background-color: #000;
+}
+
+video {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}

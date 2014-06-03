@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>App name</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/lungo.css">
+        <link rel="stylesheet" href="css/lungo.icon.css">
+        <link rel="stylesheet" href="css/lungo.theme.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+    	
+    	<section id="main" data-transition="slide">
+    		<header data-title="example">
+    			<nav>
+    				<button data-view-aside="features" data-icon="menu"></button>
+    			</nav>
+    		</header>
+		    <article id="main-article" class="active">
+		        Your content
+		    </article>
+		    <article id="second-article">
+		    	Second article
+		    </article>
+		    <footer>
+		        <nav>
+		            <a href="#" data-view-article="main-article" data-icon="menu" class="active"></a>
+		            <a href="#" data-view-article="second-article" data-icon="share"></a>
+		            <a href="#" data-view-section="second" data-icon="user"></a>
+		        </nav>
+		    </footer>
+		</section>
+		
+		<section id="second" data-transition="slide">
+		    <header data-back="chevron-left" data-title="Sección 2"></header>
+		    <article id="second_1">Sección 2</article>
+		</section>
+		
+		<aside id="features">
+		    <header data-title="Options"></header>
+		    <article class="active">
+		        {{CONTENT}}
+		    </article>
+		</aside>
+    	
+    	<script type="text/javascript" src="js/quo.js"></script>
+    	<script type="text/javascript" src="js/lungo.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="app/js/main.js"></script>
+    </body>
+</html>

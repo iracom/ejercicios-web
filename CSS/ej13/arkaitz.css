@@ -1,0 +1,52 @@
+.clearfix:before, .clearfix:after {display:block; content:" ";}
+.clearfix:after {clear:both;}
+.clear {clear: both;}
+
+.fleft {float: left;}
+.fright {float: right;}
+.txt_white {color: #FFF;}
+.small {font-size: 11px;}
+.normal {font-weight: normal;}
+h1, h2, h3, h4 {margin: 0;}
+
+body { font: 16px/1.6 Verdana sans-serif; color:#192666;  background: #F2F5FE url("imagenes/fondo.gif") top left repeat-x;}
+
+#contenedor {width:770px; margin:50px auto 0 auto;}
+
+#principal {width:530px;}
+
+#secundario {width:200px;}
+
+#cabecera {height: 100px; background: transparent url("imagenes/cabecera.jpg") top left no-repeat; position: relative;}
+#cabecera .logo {position: absolute; top:20px; left: 20px; margin: 0;}
+#cabecera #buscador {position:absolute; top: 30px; left:20px;}
+#cabecera #buscador fieldset {border: 0;}
+#cabecera #buscador legend {display: none;}
+#cabecera #buscador input[type="text"] {width: 180px;}
+
+#menu {background-color: #1C1F69; margin: 0 5px;}
+#menu ul {list-style: none; margin: 0; padding: 15px 10px 0 10px;}
+#menu ul li {display: inline-block; margin-right: 5px;}
+#menu ul li a {display: inline-block; background-color:#253575; color:#B5C4E3;}
+#menu ul li a:hover {background-color: #31479B;}
+#menu .seleccionado a {background-color: #FFF; color:#FF9000;}
+
+#contenido {background-color: #FFF; margin: 0 5px; padding: 15px;}
+#contenido .articulo {background: transparent url("imagenes/fondo_articulo.jpg") top left no-repeat; padding-top:20px;}
+#contenido .articulo h2 {background-color: #E0E4FD; padding: 15px;}
+#contenido .articulo p {padding: 0 20px;}
+#contenido .articulo .info .fecha {background: transparent url("imagenes/icono_fecha.gif") left center no-repeat;}
+#contenido .articulo .info span {padding-left: 10px;}
+
+#secundario {background: #DEE5FD url("imagenes/fondo_columna.gif") no-repeat} 
+#secundario h3 {background-color: #A7B7F5; padding: 13px 10px;}
+#secundario #sobremi {padding: 20px 10px;} 
+#secundario #sobremi img {float: left;}
+#secundario #sobremi p {margin: 0;}
+#secundario #sobremi p a {clear: left; margin: 0 15px 5px 0;}
+#secundario ul {padding:0; margin: 0; list-style: none;}
+#secundario ul li {border-bottom: 1px solid #E0E8FA; padding: 5px;}
+#secundario ul li a {background: transparent url("imagenes/icono_categoria.gif") left center no-repeat; margin-left: 10px; padding-left:15px;}
+#secundario ul li.seleccionado {background: transparent url("imagenes/icono_seleccionado.gif") left center no-repeat; margin-left: 10px; padding-left:15px;}
+#secundario ul li.seleccionado:hover {}
+

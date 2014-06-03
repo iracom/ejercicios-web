@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Reproductor de vídeo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <video id="player">
+            <source src="videos/Teahupoo.mp4">
+            <source src="videos/Teahupoo.webm">
+        </video>
+        <div class="controls">
+            <form class="video-controls">
+                <button id="iniciar">Iniciar</button>
+                <button id="pausa">Pausa</button>
+                <button id="parar">Parar</button>
+                <button id="retroceder">Retroceder</button>
+                <button id="avanzar">Avanzar</button>
+                <button id="inicio">Inicio</button>
+                <button id="fin">Fin</button>
+                <button id="pantalla-completa">Pantalla completa</button>
+                <input id="volumen" type="range" min="0" max="100">
+                <progress id="progreso" max="100"></progress>
+            </form>
+        </div>
+        <div class="tracklist">
+            <ul>
+                <li><a href="#" data-video="videos/Teahupoo">Teahupoo</a></li>
+                <li><a href="#" data-video="videos/BMX">BMX</a></li>
+                <li><a href="#" data-video="videos/F1">F1</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

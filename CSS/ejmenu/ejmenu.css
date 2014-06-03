@@ -1,0 +1,31 @@
+/*ul {padding: 0; list-style: none;}
+
+.menu>li {float:left; width:20%; position:relative;}
+
+.submenu {display: none;}
+
+.menu>li:hover .submenu{display: block;}
+
+li {border: solid 1px #000; background-color: #C7C7C7}*/
+
+ul, li, span, a { border: solid 1px #CCC; } /*Para poner borde a todos los elementos y ver como están. No hace falta en el resultado final.*/
+
+ul { padding: 0; } /*Para quitar el padding izquierdo que tienen todos los ul-s*/
+
+li { list-style: none; } /*Para quitar el circulito que hay delante de los items de la lista*/
+
+.menu > li { float: left; width: 200px; }
+
+.clearfix:after, .clearfix:before { display: table; content: " "; }
+.clearfix:after { clear: both; }
+
+ul.menu li span, ul.submenu li a { display: block;
+									padding: .5em 1em;
+									text-decoration: none;
+									color: #333;
+									background-color: #F4F4F4;
+									border: solid 1px #7C7C7C; }
+									
+.submenu { display: none; position: absolute; width: 600px; } /*Al poner la posición absoluta, los submenús no pertenecen posicionalmente al menú y lo que haya debajo del menú no se desplazará hacia abajo al desplegar el submenú*/
+
+.menu > li:hover > .submenu { display: block; }

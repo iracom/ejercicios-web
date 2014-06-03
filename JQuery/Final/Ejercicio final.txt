@@ -1,0 +1,20 @@
+Crear una extensión de jQuery que valide formularios de la siguiente manera:
+
+1. Se han definido una serie de clases que indican el tipo de validación de datos:
+    * required
+    * number
+    * email
+    * url
+    * password
+
+2. Estas clases son asignadas a los elementos de manera que indiquen los requisitos a cumplir.
+Por ejemplo:
+    <input type="text" class="required email" />
+
+3. La extensión debe validar automáticamente todos los campos marcados de esta manera,
+no permitiendo enviar el formulario en caso de cumplir los requisitos.
+
+4. El error (o errores) se muestran de manera automática bajo el elemento que no cumple las
+restricciones. Se crea un nuevo elemento div bajo el elemento (con clase "field_error"), y se asigna la clase "field_error" al elemento que no cumple la restricción para que sea posible crear estilos CSS personalizados.
+
+5. Una vez el formulario sea válido, se enviará por AJAX utilizando jQuery Form Plugin.

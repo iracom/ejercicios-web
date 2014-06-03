@@ -1,0 +1,23 @@
+.clearfix:before, .clearfix:after { display: table; content: "";}
+.clearfix:after {clear: both;}
+
+#contenedor {width: 900px; margin: 0 auto; max-width: 900px; min-width: 900px;}
+
+ul > li {width: 50%; float: left;}
+
+ul {list-style: none;}
+ul li > label {font-weight: bold;}
+ul li span input {margin-top: 10px;}
+ul li span label {font-size: 10px; display: block;}
+ul li span select {float: left; margin-top: 10px; margin-right: 5px;}
+
+.codigopostal {float:left; width: 25%;}
+.codigopostal input {width: 90%;}
+.municipio {float: left; width: 25%; padding-left: 10px;}
+.municipio input {width: 100%;}
+
+.provincia input {display: block; clear: left;}
+.provincia label {clear: left;}
+
+.requerido {color: #F00;}
+.ayuda {display: none;}

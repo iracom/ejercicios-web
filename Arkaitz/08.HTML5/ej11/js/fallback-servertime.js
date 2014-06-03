@@ -1,0 +1,1 @@
+servidor.innerHTML = "sin conexión";

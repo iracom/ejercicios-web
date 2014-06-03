@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# 2014-01-31 v8
+
+CACHE:
+index.html
+js/vendor/jquery-1.9.1.min.js
+js/vendor/modernizr-2.6.2.min.js
+js/main.js
+js/plugins.js
+js/localtime.js
+css/main.css
+css/normalize.css
+
+NETWORK:
+*
+
+FALLBACK:
+js/servertime.js js/fallback-servertime.js

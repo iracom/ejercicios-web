@@ -1,0 +1,27 @@
+#contenedor {width: 768px; margin: 20px auto; border: 1px solid silver; background-color:#FFF;}
+
+.fleft {float: left;}
+.fright {float: right;}
+.clear-fleft {clear: left;} /*Con esto hacemos que los bloques que floten hacia la izquierda, lo hagan debajo de los bloques que flotan a la izquierda.*/
+.clear-fright {clear: right;}
+
+.clearfix:before, .clearfix:after { display: table; content: "";}
+.clearfix:after {clear: both;}
+.bold {font-weight: bold;}
+.alert {color: red;}
+ul {list-style: none;}
+
+.titulo {font-weight: bold;}
+.hidden {display: none;}
+
+.alta li {width: 50%;}
+.alta label {display:block;}
+.alta .campos span {display: inline-block; width: 100%}
+
+.alta .acciones {clear:both; float: none; width: 100%; border-top: 2px solid silver; margin-top:20px; padding-top:10px;}
+
+.campos input{width: 80%;}
+
+.campos .nombre{width: 60%;}
+
+.alta .campos .codigopostal,.alta .campos .municipio,.alta .campos .provincia,.alta .campos .pais {width: 44%;}

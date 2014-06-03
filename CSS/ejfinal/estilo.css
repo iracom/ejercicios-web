@@ -1,0 +1,37 @@
+/* Estilos generales */
+.clearfix:before, .clearfix:after { display: block; content: " "; }
+.clearfix:after { clear: both; }
+
+.bg-black { background-color: #000 }
+.txt-white { color: #FFF }
+.bold {font-weight: bold; }
+
+/* ---------------------- */
+
+.wrapper { width: 960px; margin: 0 auto; }
+.header { padding: 2em 0; text-align: center; }
+.header h1.titular, .header h3, .header h2.titular { font-size: 1em; }
+.header h1.titular, .header h2.titular {margin-top: 0; }
+.header h3 { font-weight: normal; margin: 2em 0;}
+
+.menucebecera { padding-left: 0; }
+.menucabecera li {display: inline;}
+.menucabecera a {color: #FFF; text-decoration: none; border-bottom: 1px dotted #FFF; margin: 0 5px;}
+.menucabecera { margin-bottom: 0;}
+
+.articulo .post-date {float: right; margin-top: 10px; }
+.articulo h2 {margin: 0 0 10px 0; }
+.articulo { margin: 2em 0; }
+.articulo .titulo { text-decoration: none; border-bottom: 1px dotted black; }
+.articulo .autor { text-decoration: none; border-bottom: 1px dotted blue; }
+.articulo .comentarios { text-decoration: none; border-bottom: 1px dotted blue; }
+
+.menu li { list-style: none; margin: 10px 0;; }
+.menu li span {text-align: right;
+				width: 30px;
+				display: inline-block; 
+				margin-right: 10px; }
+				
+				
+table, tr, th, td {border: 1px solid #000;}
+table {border-collapse: collapse;}

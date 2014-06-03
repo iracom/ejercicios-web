@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ejercicio 16 - DOM básico y atributos XHTML</title>
+    
+    <style type="text/css">
+        .oculto { display: none; }
+        .visible { display: block; }
+    </style>
+
+    <script type="text/javascript">
+    window.onload = function() {
+    	function muestraOculta(e) {
+    		var miPadre = this.parentNode;
+    		var parrafos = miPadre.querySelectorAll("p");
+    		//var parrafo = miPadre.querySelectorAll("p:nth-child(0)");//Buscaremos el primer hijo por css. Esto a mi no me funciona, tendría que mirar en css como se busca el primer hijo.
+    		var miClase =  parrafos[0].className;
+    		//var miClase = parrafo.className;
+    		if (miClase === "oculto"){
+    			//Ocultar el resto
+    			var visibles = this.parentNode.parentNode.querySelectorAll(".visible");  //Lo ideal sería no volver a utilizar el querySelectorAll
+    			for(var i=0;i<visibles.length;i++){
+    				visibles[i].className = "oculto";
+    				var enlaces = visibles[i].parentNode.querySelectorAll("a");
+    				//enlaces[0].innerHTML = "Mostrar contenidos";
+    				enlaces[0].innerText = "Mostrar contenidos";
+    			}
+    			/////////////////////////////////////
+    			
+    			//this.innerHTML = "Ocultar contenidos"; Esta forma es muy peligrosa, mejor utilizar la de abajo;
+    			parrafos[0].className = "visible";
+    			
+    			//parrafo.className = "visible";
+    			this.innerText = "Ocultar contenidos";
+    		}
+    		else{
+    			//this.innerHTML = "Mostrar contenidos";
+    			parrafos[0].className = "oculto";
+    			//parrafo.className = "oculto";
+    			this.innerText = "Mostrar contenidos";
+    		}
+    	}
+    	
+    	window.$ = function(selector){
+    		return document.querySelectorAll(selector);
+    	}
+    	
+    	var enlaces = $("a");
+    	for(var i=0;i<enlaces.length;i++){
+    		enlaces[i].addEventListener("click",muestraOculta);
+    	}
+    }
+    
+    </script>
+</head>
+
+<body>
+	<div>
+		<p id="contenidos_1">
+        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    	</p>
+    	<a id="enlace_1" href="#">Ocultar contenidos</a>
+	</div>
+    <br/>
+	<div>
+		<p id="contenidos_2">
+        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    	</p>
+    	<a id="enlace_2" href="#">Ocultar contenidos</a>
+	</div>
+    <br/>
+	<div>
+		<p id="contenidos_3">
+        	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    	</p>
+    	<a id="enlace_3" href="#">Ocultar contenidos</a>
+	</div>
+</body>
+</html>

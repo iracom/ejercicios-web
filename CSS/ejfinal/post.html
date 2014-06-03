@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- <link rel="stylesheet" type="text/css" href="../normalize.css"/> -->
+	<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="print.css" media="print"/>
+	<title>post</title>
+	
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header bg-black txt-white">
+			<h2 class="titular">MyWeblog</h2>
+			<h3>A lot of effort went into making this effortless</h3>
+			<ul class="menucabecera">
+				<li><a href="#">home</a></li>
+				<li><a href="#">blog</a></li>
+				<li><a href="#">gallery</a></li>
+				<li><a href="#">about</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="artuno" class="articulo">
+				<div class="cabecera">
+					<span class="post-date">October 22, 2011</span>
+					<h2><a class="titulo" href="post.html">Travel day</a></h2>
+					<a class="autor" href="">John Doe,</a>
+					<a class="comentarios" href=""> 3 coments</a>
+				</div>
+				<br/>
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+				</p>
+			</div>
+			<table summary="Una tabla">
+					<thead>
+						<tr>
+							<th>Column 1</th>
+							<th>Column 2</th>
+							<th>Column 3</th>
+							<th>Column 4</th>
+							<th>Column 5</th>
+							<th>Column 6</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th colspan="5">Total:</th>
+							<th>270&euro;</th>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<th>Lore ipsum</th>
+							<td><a href="">John</a></td>
+							<td>5/6/2010</td>
+							<td>Lorem</td>
+							<td>sed in porta</td>
+							<td>125&euro;</td>
+						</tr>
+						<tr>
+							<th>Dignissim enim</th>
+							<td><a href="">Admin</a></td>
+							<td>5/6/2010</td>
+							<td>Ipsum</td>
+							<td>duis nec rutrum</td>
+							<td>75&euro;</td>
+						</tr>
+						<tr>
+							<th>Maecenas velit</th>
+							<td><a href="">Admin</a></td>
+							<td>5/6/2010</td>
+							<td>Lorem</td>
+							<td>porta lectus</td>
+							<td>35&euro;</td>
+						</tr>
+						<tr>
+							<th>Maecenas velit</th>
+							<td><a href="">Admin</a></td>
+							<td>5/6/2010</td>
+							<td>Ipsum</td>
+							<td>porta lectus</td>
+							<td>85&euro;</td>
+						</tr>
+						<tr>
+							<th>Maecenas velit</th>
+							<td><a href="">Admin</a></td>
+							<td>5/6/2010</td>
+							<td>Lorem</td>
+							<td>porta lectus</td>
+							<td>50&euro;</td>
+						</tr>
+					</tbody>
+			</table>
+		</div>
+		<div id="comments">
+			<h3>3 Comments</h3>
+			<br/>
+			<ul>
+				<li>
+					<img src="panda.jpg" alt="Avatar"></img>
+					<a href="">stylearua</a>
+					<span>February 22, 2013 at 11:34 am</span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</li>
+				<li>
+					<img src="panda.jpg" alt="Avatar"></img>
+					<a href="">stylearua</a>
+					<span>February 22, 2013 at 11:34 am</span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</li>
+				<li>
+					<img src="panda.jpg" alt="Avatar"></img>
+					<a href="">stylearua</a>
+					<span>February 22, 2013 at 11:34 am</span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+				</li>
+			</ul>
+			<h4>Leave a comment</h4>
+			<form class="formulario" action="" method="post">
+				<label for="nombre">Name</label>
+				<br/>
+				<input type="text" id="nombre" name="nombre"/>
+				<br/>
+				<label for="mail">Mail (will not be published)</label>
+				<br/>
+				<input type="text" id="mail" name="mail"/>
+				<br/>
+				<label for="website">Website</label>
+				<br/>
+				<input type="text" id="website" name="website"/>
+				<br/>
+				<label for="comment">Comment</label>
+				<br/>
+				<textarea id="comment" name="comment" cols="40" rows="10">&nbsp;</textarea>
+				<br/>
+				<input type="submit" name="enviar" value="POST COMMENT"/>
+			</form>
+		</div>
+		<div id="footer">
+			<span>&copy; 2011 <a href="">John Doe</a></span>
+		</div>
+	</div>
+
+</body>
+</html>
